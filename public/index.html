@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script async defer src = "script.js"></script>
+    <script async defer src = "jquery.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload = "getData()"  style="background-color:gray;">
+    <h1 align = "center" style="color:darkblue;"><u>Todo list manager</u></h1>
+
+    <label><b>  Title   </b><span style = "color : red">*  </span> :    </label>
+    <input type = "text" id = "title">
+<br>
+    <label><b>Description :</b></label>
+    <input type = "text" id = "description">
+    <br>
+    <label><b>Due :</b><span style="color : red">*</span> </label>
+    <input type = "date" id = "due">
+    <label><b>Priority:</b><span style = "color : red">*</span> </label>
+    <select id="priority">
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+    </select>
+    <br/>
+    <label><b>Note : </b></label>
+    <input type = "text" id = "note" style="width : 50%">
+    <input type="button" value = "Add Task" id = "btn">
+    <p id = 'err'></p>
+    <br>
+
+  
+    <label><b>Sort by:</b><span style="color : red">*</span> </label>
+    <select id="sort">
+        <option value="due">Due date</option>
+        <option value="priority">Priority</option>
+        <option value="status">Status</option>
+    </select>
+    </center>
+    
+
+    <br>
+    
+    <table id = "table"><table>
+</body>
+</html>
